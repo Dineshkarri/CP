@@ -8,6 +8,11 @@
 
 public class PythonBasics {
     public String show_excitement() {
-    	// your code goes here
+		// your code goes here
+			String name = "I am super exited for this course! ";
+		return name;
 	}
+}
+
+public static void main(String[] args){
 }
