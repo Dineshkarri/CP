@@ -7,7 +7,7 @@
 # return root1, root2
 
 import math
-from math import sqrt
+# from math import sqrt
 def fun_find_int_roots(a, b, c):
 	dis = int((b*b) - (4*a*c))
 	root1 = int((-b + math.sqrt(dis)) /(2*a))
