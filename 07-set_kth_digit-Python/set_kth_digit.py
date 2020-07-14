@@ -8,8 +8,12 @@
 
 def fun_set_kth_digit(n, k, d):
 		n1 = str(n)
-		# list1 =list(n1)
-		n1[-k-1] = d
-		return int(n1)
+		n2 =n1[::-1]
+		list1 = list(n2)
+		list1[k] = d
+		n3 = ''.join(list1)
+		n4 = n3[::-1]
+		return int(n3)
+		
 		# return n1[-k]
 
