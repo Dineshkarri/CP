@@ -7,10 +7,10 @@
 import math
 
 def fun_nearestodd(n):
-	m = math.ceil(n)
-	if m%2 == 0:
+	# m = n//1
+	if n%2 == 0:
 		return m-1
-	return m
+	return int(m)
 
 
 
