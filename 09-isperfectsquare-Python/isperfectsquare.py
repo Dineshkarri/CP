@@ -8,6 +8,12 @@ def isperfectsquare(n):
 	# your code goes here
 	if type(n) != 'int':
 		return False
-	if type(sqrt(n)) == 'int':
-		return True
-	return False
+	# for i in range (n//10):
+	# 	if i*i == n:
+	# 		return True
+	# return False
+	x = sqrt(n)
+	return ((x - math.floor(x)) == 0)
+	# if type(x) == 'int':
+	# 	return True
+	# return False
