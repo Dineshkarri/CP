@@ -22,11 +22,11 @@ class Classy(object):
     def addItem(self,string):
         self.items.append(string)
 
-    dict ={"tophat":2, "bowtie":4, "monocle":5}
 
     def classiness(self):
+        dic ={"tophat":2, "bowtie":4, "monocle":5}
         sum = 0
         for i in self.items:
-            if i in dict:
-                sum += dict[i]
+            if i in dic.keys():
+                sum += dic[i]
         return sum
