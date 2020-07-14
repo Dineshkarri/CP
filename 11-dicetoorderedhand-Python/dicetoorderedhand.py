@@ -15,11 +15,11 @@ def dicetoorderedhand(a, b, c):
 	# your code goes here
 	x= max(a,b,c)
 	y= min(a,b,c)
-	if a<= x and a>=y:
+	if a< x and a>y:
 		return x*100 + a *10 + y
-	if b<= x and b>=y:
+	if b< x and b>y:
 		return x*100 + b *10 + y
-	if c<= x and c>=y:
+	if c< x and c>y:
 		return x*100 + c *10 + y
 
 
