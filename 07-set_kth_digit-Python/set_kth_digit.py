@@ -7,5 +7,9 @@
 
 
 def fun_set_kth_digit(n, k, d):
-		return 0
+		n1 = str(n)
+		# list1 =list(n1)
+		# n1[-(k)] = d
+		# return int(n1)
+		return n1[-k]
 
