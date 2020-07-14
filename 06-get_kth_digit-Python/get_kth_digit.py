@@ -6,7 +6,7 @@
 
 
 def fun_get_kth_digit(digit, k):
-	m = len(str(digit))
+	m = len(str(abs(digit)))
 	if m>k:
 		for i in range(k+1):
 			num = (digit)%10
