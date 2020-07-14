@@ -24,7 +24,7 @@ class Classy(object):
 
     dict ={"tophat":2, "bowtie":4, "monocle":5}
 
-    def classiness():
+    def classiness(self):
         sum = 0
         for i in items:
             if i in dict:
