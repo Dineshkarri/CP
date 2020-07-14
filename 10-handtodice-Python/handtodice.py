@@ -9,9 +9,8 @@ def handtodice(hand):
 	# your code goes here
 	while (hand > 0):
 		x = hand % 10
-		hand = hand/10
+		hand = hand//10
 		y= hand % 10
-		hand = hand/10
+		hand = hand//10
 		z= hand % 10
-		# hand = hand/10
 		return (z,y,x)
