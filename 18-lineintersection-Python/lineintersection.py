@@ -6,4 +6,10 @@
 
 def lineintersection(m1, b1, m2, b2):
 	# your code goes here
+	a =max(m1,m2,b1,b2)
+	if m1 == m2 or abs(m2-m1) == abs(b1-b2):
+		return None
+	for x in range(a):
+		if (m1*x + b1) == (m2*x + b2):
+			return x
 	pass
