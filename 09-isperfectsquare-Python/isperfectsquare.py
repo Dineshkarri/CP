@@ -10,4 +10,4 @@ def isperfectsquare(n):
 		return False
 	if type(sqrt(n)) == 'int':
 		return True
-	
+	return False
