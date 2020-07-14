@@ -26,7 +26,7 @@ class Classy(object):
 
     def classiness(self):
         sum = 0
-        for i in items:
+        for i in self.items:
             if i in dict:
                 sum += dict[i]
         return sum
