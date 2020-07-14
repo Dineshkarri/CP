@@ -19,8 +19,8 @@ class Classy(object):
     def __init__(self):
         self.items = []
     
-    def addItem(string):
-        items.append(string)
+    def addItem(self,string):
+        self.items.append(string)
 
     dict ={"tophat":2, "bowtie":4, "monocle":5}
 
