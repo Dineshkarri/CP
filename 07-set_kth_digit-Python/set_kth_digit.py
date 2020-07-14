@@ -11,8 +11,8 @@ def fun_set_kth_digit(n, k, d):
 		n2 =n1[::-1]
 		list1 = list(n2)
 		if k<= len(list1):
-			list1[k] = d
-		list1.extend(str(d))
+			list1.extend(str(d))
+		list1[k] = d
 		n3 = ''.join(map(str,list1))
 		n4 = n3[::-1]
 		return int(n4) if n>0 else -int(n4)
