@@ -4,8 +4,6 @@
 # assert(rotateString('abcd',  1) == 'bcda')
 # assert(rotateString('abcd', -1) == 'dabc')
 
-
-
 def fun_rotatestrings(s, n):
 	if n > 0:
 		k=len(s)
