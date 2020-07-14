@@ -11,6 +11,6 @@ def fun_get_kth_digit(digit, k):
 	if m>k:
 		for i in range(k+1):
 			num = (digit1)%10
-			digit = digit1//10
+			digit1 = digit1//10
 		return num
 	return 0
