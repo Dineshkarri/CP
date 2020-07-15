@@ -13,7 +13,7 @@ def fun_nthfibonaccinumber(n):
 		return 1
 	x=1
 	y=1
-	num = x
+	num = y
 	for i in range(1,n):
 		num = x + y
 		x = y
