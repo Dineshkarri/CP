@@ -10,5 +10,5 @@ import math
 def largestperfectsquare(n):
 	# your code goes here
 	for i in range (n,0,-1):
-		return (math.sqrt(i)- math.floor())
-	pass
+		return i if (math.sqrt(i) - math.floor(math.sqrt(i))) == 0
+	
