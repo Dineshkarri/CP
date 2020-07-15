@@ -17,4 +17,3 @@ def gcd(m, n):
 		a,b=b,a%b
 	return a
 	# your code goes here
-	pass
