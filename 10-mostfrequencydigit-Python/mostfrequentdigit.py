@@ -8,10 +8,10 @@ def mostfrequentdigit(n):
 	n =str(n)
 	temp =0
 	x=0
-	for i in range(len(n)):
-		num =n[i]
+	for i in n:
+		num =i
 		x =n.count(i)
-		if x> temp:
-			num = n[i]
+		if x >temp:
+			num = i
 			temp=x
-	return num
+	return int(num)
