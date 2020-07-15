@@ -10,9 +10,9 @@ public class PythonBasics {
     public String show_excitement() {
 		// your code goes here
 			String name ="";
-			String str ="I am super excited for this course! ";
+			String str ="I am super excited for this course!";
 			for (int i=1; i<6; i++){
-				name= name + str;
+				name= str + name ;
 			}
 		return name;
 	}
