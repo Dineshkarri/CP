@@ -6,7 +6,7 @@ import math
 from math import sqrt
 def isperfectsquare(n):
 	# your code goes here
-	if type(n) != 'int':
+	if type(n) != int:
 		return False
 	# for i in range (n//10):
 	# 	if i*i == n:
