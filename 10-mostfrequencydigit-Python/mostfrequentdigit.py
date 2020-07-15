@@ -4,4 +4,14 @@
 
 def mostfrequentdigit(n):
 	# your code goes here
-	pass
+	n =abs(n)
+	n =str(n)
+	temp =0
+	x=0
+	for i in range(len(n)):
+		num =n[i]
+		x =n.count(i)
+		if x> temp:
+			num = n[i]
+			temp=x
+	return num
