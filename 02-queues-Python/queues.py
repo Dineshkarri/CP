@@ -14,7 +14,7 @@ class Queue:
         self.list1.append(new_element)
         pass
 
-    def peek(self,x):
+    def peek(x):
         return x
         pass 
 
