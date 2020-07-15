@@ -12,9 +12,9 @@ def isperfectsquare(n):
 	# 	if i*i == n:
 	# 		return True
 	# return False
-	if type(n) == int:
-		x = sqrt(n)
-		return ((x - math.floor(x)) == 0)
+	# if type(n) == int and n>0:
+		# x = sqrt(n)
+	return ((sqrt(n) - math.floor(sqrt(n))) == 0) if n>0 else False
 	# 	if type(x) == int:
 	# 		return True
 	# return False
