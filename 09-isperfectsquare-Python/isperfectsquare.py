@@ -8,7 +8,7 @@ def isperfectsquare(n):
 	# your code goes here
 	if type(n) != int:
 		return False
-	for i in range (n):
+	for i in range (n//2):
 		if i*i == n:
 			return True
 	return False
