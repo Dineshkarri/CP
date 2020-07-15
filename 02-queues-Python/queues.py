@@ -11,7 +11,7 @@ class Queue:
         self.list1 = []
 
     def enqueue(self, new_element):
-        list1.append(new_element)
+        self.list1.append(new_element)
         pass
 
     def peek(self):
