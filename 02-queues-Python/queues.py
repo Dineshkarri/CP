@@ -14,9 +14,10 @@ class Queue:
         self.list1.append(new_element)
         pass
 
-    def peek(self):
+    def peek(self,x):
+        return x
         pass 
 
     def dequeue(self):
-        list1.pop(0)
+        return self.list1.pop(0)
         pass
