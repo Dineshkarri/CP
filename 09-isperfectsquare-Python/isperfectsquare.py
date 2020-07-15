@@ -14,7 +14,7 @@ def isperfectsquare(n):
 	# return False
 	if type(n) == int:
 		x = sqrt(n)
-		# return ((x - math.floor(x)) == 0)
-		if type(x) == int:
-			return True
-	return False
+		return ((x - math.floor(x)) == 0)
+	# 	if type(x) == int:
+	# 		return True
+	# return False
