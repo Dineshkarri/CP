@@ -5,19 +5,18 @@ few lines as possible.
 Make sure you pass the test cases too!"""
 
 class Queue:
-    
+
     def __init__(self, head=None):
         self.storage = [head]
-        self.list1 = []
 
     def enqueue(self, new_element):
-        self.list1.append(new_element)
+        self.storage.append(new_element)
         pass
 
-    def peek(x):
-        return x
+    def peek(self):
+        return self.storage[0]
         pass 
 
     def dequeue(self):
-        return self.list1.pop(0)
+        return self.storage.pop(0)
         pass
