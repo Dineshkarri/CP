@@ -37,7 +37,7 @@ def fun_nth_happy_number(n):
 	m =2
 	list1=[]
 	while True:
-		if len(list1)+1==n:
+		if len(list1)==n:
 			break
 		if ishappynumber(m):
 			list1.append(m)
