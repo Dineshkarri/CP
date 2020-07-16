@@ -8,8 +8,15 @@
 def issorted(a):
 	# your code goes here
 	if len(a) == 0: return True
-	c=0
+	c=d=0
 	for i in range(len(a)):
+		if i == len(a) - 1:
+			break
 		if a[i] <= a[i+1]:
 			c += 1
-	return c==len(a)
+	for i in range(len(a)):
+		if i == len(a) - 1:
+			break
+		if a[i] >= a[i+1]:
+			d += 1
+	return c==len(a) or d==len(a)
