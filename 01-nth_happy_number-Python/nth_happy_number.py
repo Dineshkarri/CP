@@ -32,11 +32,11 @@ def ishappynumber(n):
 			return True
 
 def fun_nth_happy_number(n):
-	m =2
-	list1=[1]
-	while n>len(list1):
+	m =1
+	list1=[]
+	while n>len(list1)-1:
 		if ishappynumber(m):
 			list1.append(m)
 		m +=1
-	return list1[n-2]
+	return list1[n-1]
 		
