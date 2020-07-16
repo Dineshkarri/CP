@@ -6,4 +6,6 @@
 
 def smallestdifference(a):
 	# Your code goes here
+	a=sort(a)
+	return a[1]-a[0]
 	pass
