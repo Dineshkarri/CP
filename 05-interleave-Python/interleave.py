@@ -11,7 +11,13 @@ def fun_interleave(s1,s2):
 	a=len(s1)
 	b=len(s2)
 	s=""
-	for i in range(max(a,b)):
-		s= s + s1[i] + s2[i]
-	return s
+	if a>b or a==b:
+		for i in range(b):
+			s= s + s1[i] + s2[i]
+		return s + s1[b:]
+	else:
+		for i in range(a):
+			s = s +s1[i] +s2[i]
+		return s+ s2[a:]
+	
 	
