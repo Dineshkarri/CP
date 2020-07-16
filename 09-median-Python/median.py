@@ -5,5 +5,7 @@
 import statistics
 def median(a):
 	# your code goes here
-	return statistics.median(a) if len(a)>0 else None
-	pass
+	# return statistics.median(a) if len(a)>0 else None
+	if len(a)==0: return None
+	if len(a)%2 == 0: return (float(a[len(a)//2]) + float(a[(len(a)//2)-1]))/2 
+	else : return int(a[(len(a)//2)-1])
