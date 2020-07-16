@@ -7,5 +7,5 @@
 def smallestdifference(a):
 	# Your code goes here
 	a=sort(a)
-	return a[1]-a[0]
+	return a[1]-a[0] if len(a) >0 else -1
 	pass
