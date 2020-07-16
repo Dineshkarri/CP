@@ -11,7 +11,7 @@ def smallestdifference(a):
 	a.sort()
 	temp=0
 	for i in range(len(a)-1):
-		if ads(a[i]-a[i+1]) > temp:
+		if abs(a[i]-a[i+1]) > temp:
 			temp=abs(a[i]-a[i+1])
 	return temp
 	
