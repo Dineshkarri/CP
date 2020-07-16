@@ -31,15 +31,15 @@ def isprime(m):
 	return True
 
 def fun_nth_happy_prime(n):
-	if n==0:
-		return 7
-	m =8
+	# if n==0:
+	# 	return 7
+	m =7
 	list1=[]
 	while True:
 		if ishappynumber(m):
 			if isprime(m):
 				list1.append(m)
 		m +=1
-		if len(list1)==n:
+		if len(list1)==n+1:
 			break
-	return list1[n-1]
+	return list1[len(list1)-1]
