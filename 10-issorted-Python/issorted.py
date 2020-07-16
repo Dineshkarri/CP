@@ -10,6 +10,7 @@ def issorted(a):
 	if len(a) == 0: return True
 	d=0
 	x=max(a)
+	print(x)
 	if a[0]==x:
 		for i in range(len(a)):
 			if i == len(a) - 1:
