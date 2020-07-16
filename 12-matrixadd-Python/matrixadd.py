@@ -27,6 +27,6 @@ def matrixadd(L, M):
 		for i in range(len(L)):
 			for j in range(len(L[0])):
 				L[i][j] += M[i][j]
-			return L
+		return L
 	except IndexError:
 		return None
