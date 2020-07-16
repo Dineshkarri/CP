@@ -38,5 +38,5 @@ def fun_nth_happy_number(n):
 		if ishappynumber(m):
 			list1.append(m)
 		m +=1
-	return list1[n-1]
+	return list1[n-2]
 		
