@@ -19,4 +19,7 @@ def issorted(a):
 			break
 		if a[i] >= a[i+1]:
 			d += 1
-	return c==len(a) or d==len(a)
+	if c==len(a) or d==len(a):
+		return True
+	return False
+	# return c==len(a) or d==len(a)
