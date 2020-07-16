@@ -13,7 +13,26 @@
 # assert(ishappynumber(98) == False)
 # assert(ishappynumber(404) == True)
 # assert(ishappynumber(405) == False)
+def issum(n):
+	sum=num=0
+	while n>0:
+		num = n%10
+		sum =sum + num**2
+		n=n//10
+	return sum
 
 def ishappynumber(n):
 	# your code goes here
-	pass
+	lis=[]
+	if n<0:
+		return False
+	while True:
+		n = issum(n)
+		if n in lis:
+			return False
+		lis.append(n)
+		if n==1:
+			return True
+
+
+	
