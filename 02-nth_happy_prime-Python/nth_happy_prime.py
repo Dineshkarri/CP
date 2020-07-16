@@ -34,7 +34,7 @@ def fun_nth_happy_prime(n):
 	if n==0:
 		return 7
 	m =8
-	list1=[7]
+	list1=[]
 	while True:
 		if ishappynumber(m):
 			if isprime(m):
