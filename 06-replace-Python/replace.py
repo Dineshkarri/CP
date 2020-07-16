@@ -8,10 +8,13 @@ def fun_replace(s1, s2, s3):
 	# return s1.replace(s2, s3)
 	a=len(s2)
 	s=""
-	for i in range(len(s1)):
+	i=0
+	# for i in range(len(s1)):
+	while i<len(s1):
 		if s1[i:i+a] == s2:
 			s= s +s3
 			i = i+a
 		else :
 			s = s+s1[i]
-
+			i=i+1
+	return s
