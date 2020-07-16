@@ -13,9 +13,11 @@ def issorted(a):
 	print(x)
 	if a[0]==x:
 		for i in range(len(a)):
+			print(i)
 			if i == len(a) - 1:
 				break
 			if a[i] <= a[i+1]:
+				print('yes')
 				d += 1
 	else:
 		for i in range(len(a)):
