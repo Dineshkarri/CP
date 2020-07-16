@@ -33,7 +33,7 @@ def isprime(m):
 def fun_nth_happy_prime(n):
 	if n==0:
 		return 1
-	m =1
+	m =0
 	list1=[]
 	while True:
 		if len(list1)==n:
@@ -43,4 +43,4 @@ def fun_nth_happy_prime(n):
 				list1.append(m)
 		m +=1
 		
-	return list1[n]
+	return list1[n-1]
