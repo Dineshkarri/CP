@@ -10,19 +10,19 @@ def issorted(a):
 	if len(a) == 0: return True
 	d=0
 	x=max(a)
-	print(x)
+	# print(x)
 	if a[0]==x:
 		for i in range(len(a)):
-			print(i)
+			# print(i)
 			if i == len(a) - 1:
 				break
 			if a[i] >= a[i+1]:
 				d += 1
-				print(d)
+				# print(d)
 	else:
 		for i in range(len(a)):
 			if i == len(a) - 1:
 				break
-			if a[i] >= a[i+1]:
+			if a[i] <= a[i+1]:
 				d += 1
-	return d==len(a)
+	return d==len(a)-1
