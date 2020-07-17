@@ -25,6 +25,6 @@ def fun_nth_palindromic_prime(n):
 			if isprime(m):
 				list1.append(m)
 		m +=1
-		if len(list1)==n+1:
+		if len(list1)==n:
 			break
 	return list1[n-1]
