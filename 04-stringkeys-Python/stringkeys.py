@@ -11,7 +11,7 @@ class HashTable(object):
         the table."""
         # Hash Value = (ASCII Value of First Letter * 100) + ASCII Value of Second Letter 
         # Your code goes here
-        a = calculate_hash_value(string)
+        a = self.calculate_hash_value(string)
         self.table[a] =string
         
         
@@ -20,7 +20,7 @@ class HashTable(object):
         string is already in the table.
         Return -1 otherwise."""
         # Your code goes here
-        a = calculate_hash_value(string)
+        a = self.calculate_hash_value(string)
         if self.table[a] ==string:
             return a
         return -1
