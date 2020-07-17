@@ -6,7 +6,12 @@
 # are not legal values, return None, instead of crashing. 
 
 
-
-
+def factorial(n):
+	num=1
+	if n == 0:
+		return 1
+	for i in range(1,n+1):
+		num= num*i
+	return num
 def fun_pascaltrianglevalue(row, col):
 	return 1
