@@ -21,8 +21,8 @@ def fun_nth_additive_prime(n):
 	y=0
 	while len(l)!=n:
 		if isprime(m):
-			y=list(map(int,list(str(m))))
-			x = sum(y)
+			y=list(str(m))
+			x = sum(map(int,y))
 			if isprime(x):
 				l.append(m)
 		m=m+1
