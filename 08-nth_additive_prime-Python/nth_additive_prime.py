@@ -22,4 +22,4 @@ def fun_nth_additive_prime(n):
 			if isprime(x):
 				l.append(x)
 		m=m+1
-	return l[n-1]
+	return l[n]
