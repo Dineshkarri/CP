@@ -16,10 +16,12 @@ def fun_nth_additive_prime(n):
 	m=1
 	x=0
 	l=[]
-	while len(l)==n:
+	y=0
+	while len(l)!=n:
 		if isprime(m):
-			x = sum(list(m))
+			y=list(m)
+			x = sum(y)
 			if isprime(x):
 				l.append(x)
 		m=m+1
-	return l[n-1]
+	return l[n]
