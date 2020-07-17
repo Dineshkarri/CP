@@ -13,9 +13,9 @@ def isprime(m):
 	return True
 
 def fun_nth_additive_prime(n):
-	# if n==0:
-	# 	return 2
-	m=1
+	if n==0:
+		return 2
+	m=3
 	x=0
 	l=[]
 	y=0
