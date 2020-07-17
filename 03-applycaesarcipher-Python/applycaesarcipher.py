@@ -14,17 +14,16 @@ def fun_applycaesarcipher(msg, shift):
 	sum=""
 	if shift >0:
 		for i in msg:
-			if ord(i) != 32:
-				if i.isupper():
-					if (ord(i)+shift)<91:
-						sum =sum+chr(ord(i)+shift)
-					sum = sum + chr(ord(i)+shift-25)
-				else:
-					if (ord(i)+shift)<123:
-						sum =sum+chr(ord(i)+shift)
-					sum = sum + chr(ord(i)+shift-25)
-			else:
+			if ord(i) == 32:
 				sum = sum+i
+			if i.isupper():
+				if (ord(i)+shift)<91:
+					sum =sum+chr(ord(i)+shift)
+				sum = sum + chr(ord(i)+shift-25)
+			else:
+				if (ord(i)+shift)<123:
+					sum =sum+chr(ord(i)+shift)
+				sum = sum + chr(ord(i)+shift-25)
 		return sum		
 	return ""
 
