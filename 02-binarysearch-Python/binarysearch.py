@@ -18,13 +18,13 @@ def binary_search(input_array, value):
     min = 0
     max=len(input_array)-1
     mid=(min+max)//2
-    while minmax:
+    while min<=max:
         if value == input_array[mid]:
             return mid
         if value < input_array[mid]:
-            max=mid-1
+            max=mid
         else:
-            min=mid+1
+            min=mid
         mid = (min+max)//2
     return -1
     
