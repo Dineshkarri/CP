@@ -7,8 +7,14 @@
 class vowelscount {
 	public int fun_vowelscount(String s){
 		// your code goes here
+		int c=0;
 		String s1 = s.toLowerCase();
 		int n = s1.length();
+		for (int i=0; i<n; i++){
+			if (s1.charAt(i) == 'a' || s1.charAt(i) == 'e' || s1.charAt(i) == 'i' || s1.charAt(i) == 'o' || s1.charAt(i) == 'u'){
+				c += 1;
+			}
+		}
 		return 0;
 	}
 	
