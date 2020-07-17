@@ -12,4 +12,17 @@ doesn't exist in the list."""
 
 def binary_search(input_array, value):
     # Your code goes here
-    pass
+    # min=input_array[0]
+    # max=input_array[len(input_array)-1]
+    # mid=input_array[(len(input_array)-1)//2]
+    min = 0
+    max=len(input_array)-1
+    mid=min+max//2
+    while input_array[mid]!=value:
+        if value < input_array[mid]:
+            max=mid
+        else:
+            min=max
+        mid = min+max//2
+    return mid
+    
