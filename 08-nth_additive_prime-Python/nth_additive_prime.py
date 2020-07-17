@@ -13,15 +13,17 @@ def isprime(m):
 	return True
 
 def fun_nth_additive_prime(n):
-	m=1
+	if n==0:
+		return 2
+	m=3
 	x=0
 	l=[]
 	y=0
 	while len(l)!=n:
 		if isprime(m):
-			y=list(str(m))
+			y=list(map(int,list(str(m))))
 			x = sum(y)
 			if isprime(x):
-				l.append(x)
+				l.append(m)
 		m=m+1
-	return l[n]
+	return l[n-1]
