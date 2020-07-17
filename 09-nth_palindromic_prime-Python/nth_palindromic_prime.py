@@ -4,8 +4,6 @@
 # so 313 is an palindrome Prime. fun_nth_palindrome_prime(0) returns 2
 
 def isprime(m):
-	if m<=1:
-		return False
 	for i in range (2,m):
 		if m%i ==0:
 			return False
@@ -16,5 +14,17 @@ def ispd(n):
 	if n[::]==n[::-1]:
 		return True
 	return False
+
 def fun_nth_palindromic_prime(n):
-	return 0
+	if n==0:
+		return 2
+	m =3
+	list1=[]
+	while True:
+		if ispd(m):
+			if isprime(m):
+				list1.append(m)
+		m +=1
+		if len(list1)==n+1:
+			break
+	return list1[len(list1)-1]
