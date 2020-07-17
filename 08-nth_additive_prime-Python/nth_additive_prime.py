@@ -19,7 +19,7 @@ def fun_nth_additive_prime(n):
 	y=0
 	while len(l)!=n:
 		if isprime(m):
-			y=list(m)
+			y=list(str(m))
 			x = sum(y)
 			if isprime(x):
 				l.append(x)
