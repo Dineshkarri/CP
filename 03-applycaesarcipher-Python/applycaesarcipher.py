@@ -37,7 +37,7 @@ def fun_applycaesarcipher(msg, shift):
 				else:
 					sum = sum + chr(ord(i)+shift-26)
 			else:
-				if (ord(i)+shift)<123:
+				if (ord(i)+shift)>97:
 					sum =sum+chr(ord(i)+shift)
 				else:
 					sum = sum + chr(ord(i)+shift-26)
