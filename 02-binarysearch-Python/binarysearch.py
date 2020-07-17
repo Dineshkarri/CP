@@ -22,9 +22,9 @@ def binary_search(input_array, value):
         if value == input_array[mid]:
             return mid
         if value < input_array[mid]:
-            max=mid
+            max=mid-1
         else:
-            min=mid
+            min=mid+1
         mid = (min+max)//2
     return -1
     
