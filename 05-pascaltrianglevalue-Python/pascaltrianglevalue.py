@@ -14,4 +14,4 @@ def factorial(n):
 		num= num*i
 	return num
 def fun_pascaltrianglevalue(row, col):
-	return 1
+	return factorial(row)//(factorial(col)*factorial(row-col))
