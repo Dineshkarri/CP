@@ -11,12 +11,12 @@
 
 
 def fun_applycaesarcipher(msg, shift):
-	sum=""
+	sum=''
 	if shift >0:
 		for i in msg:
-			if ord(i) == 32:
+			if i == ' ':
 				sum = sum+i
-			if i.isupper():
+			elif i.isupper():
 				if (ord(i)+shift)<91:
 					sum =sum+chr(ord(i)+shift)
 				else:
