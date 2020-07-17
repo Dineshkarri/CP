@@ -27,7 +27,22 @@ def fun_applycaesarcipher(msg, shift):
 				else:
 					sum = sum + chr(ord(i)+shift-26)
 		return sum		
-	return ""
+	if shift <0:
+		for i in msg:
+			if i == ' ':
+				sum = sum+i
+			elif i.isupper():
+				if (ord(i)+shift)>65:
+					sum =sum+chr(ord(i)+shift)
+				else:
+					sum = sum + chr(ord(i)+shift-26)
+			else:
+				if (ord(i)+shift)<123:
+					sum =sum+chr(ord(i)+shift)
+				else:
+					sum = sum + chr(ord(i)+shift-26)
+		return sum
+	
 
 
 
