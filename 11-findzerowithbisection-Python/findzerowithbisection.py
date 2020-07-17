@@ -20,4 +20,4 @@ def findzerowithbisection(x, epsilon):
 		else:
 			max=mid
 		mid=(max+min)/2.0
-		
+	return mid	
