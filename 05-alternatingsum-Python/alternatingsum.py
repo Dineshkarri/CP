@@ -15,9 +15,9 @@ def fun_alternatingsum(a):
 	# return x-y
 	a=(sum(a[0::2]))
 	print(a)
-	b=(sum(a[1::2]))
+	b=sum(a[1::2])
 	print(b)
 	
-	return a-b
+	return a-int(b)
 
 
