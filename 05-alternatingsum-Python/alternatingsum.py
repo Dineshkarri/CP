@@ -18,6 +18,6 @@ def fun_alternatingsum(a):
 	b=int(sum(a[1::2]))
 	print(b)
 	
-	return a-int(b)
+	return a-b
 
 
