@@ -4,13 +4,17 @@
 # the product of the two. For example, multiplyPolynomials([2,0,3], [4,5]) represents the problem (2x**2 + 3)(4x + 
 # 5), and:    (2x**2 + 3)(4x + 5) = 8x**3 + 10x**2 + 12x + 15
 # And so this returns the list [8, 10, 12, 15].
-
+import numpy as np
 def multipolynomials(p1, p2):
 	# Your code goes here
-	l=[]
-	for i in p1:
-		for j in p2:
-			if i!=0:
-				l.append(i*j)
-	return l
-	pass
+	# l=[]
+	# for i in p1:
+	# 	for j in p2:
+	# 		# if i!=0 and j!=0:
+	# 		l.append(i*j)
+	# return l
+	# pass
+	x=np.array(p1)
+	y=np.array(p2)
+	mul= np.polymul(y,x)
+	return mul
