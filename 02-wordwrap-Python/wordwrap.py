@@ -19,7 +19,7 @@
 def fun_wordwrap(s, n):
 	sum=""
 	x=s.strip()
-	z=s.replace(" ", "-")
+	z=x.replace(" ", "-")
 	print(z)
 	for i in range(0,len(s),n):
 		sum= sum+s[i:]+"\n"
