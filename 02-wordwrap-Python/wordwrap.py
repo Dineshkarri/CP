@@ -22,7 +22,7 @@ def fun_wordwrap(s, n):
 	s.repalce(" ",'-')
 	for i in range(0,len(s),n):
 		sum= sum+s[i:]+"\n"
-	return ""
+	return sum
 
 
  
