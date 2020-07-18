@@ -18,14 +18,15 @@
 
 def fun_wordwrap(s, n):
 	sum=""
-	print(s)
+	# print(s)
 	x= s.strip()
-	print(x)
+	# print(x)
 	z=x.replace(" ", "-")
-	print(z)
+	# print(z)
 	for i in range(0,len(s),n):
 		sum= sum+s[i:]+"\n"
-	return sum
+		print(sum)
+	return sum[:len(sum)-1]
 
 
  
