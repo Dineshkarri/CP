@@ -10,11 +10,14 @@
 
 
 def fun_getaverage(s):
-	s=list(s)
+	x=list(s.split(","))
 	l=[]
-	for i in s:
+	for i in x:
+		print("hi")
 		if isinstance(i,int):
+			print("hello")
 			l.append(i)
+			print(l)
 	print(len(l))
 	avg=sum(l)/len(l)
 	return sum if len(l)!=0 else 0
