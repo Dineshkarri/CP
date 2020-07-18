@@ -7,4 +7,10 @@
 
 def multipolynomials(p1, p2):
 	# Your code goes here
+	l=[]
+	for i in p1:
+		for j in p2:
+			if i!=0:
+				l.append(i*j)
+	return l
 	pass
