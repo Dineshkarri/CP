@@ -5,6 +5,16 @@
 
 
 def fun_kth_occurrences(s, n):
+	dic={}
+	s=s.replace(" ","")
+	for i in s:
+		if i not in dic:
+			dic[i]=s.count(i)
+	sort_dic = sorted(dic.items(), key=lambda x: x[1], reverse=True)
+	print (sort_dic)
+	# for i in sort_dic:
+
+	# 	if 
 	return 'a'
 
 
