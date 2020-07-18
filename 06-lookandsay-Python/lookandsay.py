@@ -13,7 +13,7 @@ def lookandsay(a):
 	l1=[]
 	# if len(a) == : return []
 	for i in a:
-		if i in l1:
+		if i not in l1:
 			l.append((a.count(i),i))
 		l1.append(i)
 	return l	
