@@ -10,11 +10,12 @@ def fun_kth_occurrences(s, n):
 	for i in s:
 		if i not in dic:
 			dic[i]=s.count(i)
+	print(dic)
 	sort_dic = sorted(dic.items(), key=lambda x: x[1], reverse=True)
-	print (sort_dic)
-	# for i in sort_dic:
-
-	# 	if 
-	return 'a'
+	print (len(sort_dic))
+	# for i in range(len(sort_dic)):
+	# 	if i == n-1:
+	# 		return i[0]
+	
 
 
