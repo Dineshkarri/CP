@@ -17,6 +17,8 @@
 
 
 def fun_wordwrap(s, n):
+	s=s.strip()
+	s.repalce(" ",'-')
 	return ""
 
 
