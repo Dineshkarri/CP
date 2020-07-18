@@ -18,9 +18,9 @@
 
 def fun_wordwrap(s, n):
 	sum=""
-	s=s.strip()
-	x=s.replace(" ", "-")
-	print(x)
+	x=s.strip()
+	z=s.replace(" ", "-")
+	print(z)
 	for i in range(0,len(s),n):
 		sum= sum+s[i:]+"\n"
 	return sum
