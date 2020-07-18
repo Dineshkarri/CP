@@ -9,6 +9,13 @@
 
 
 
-def fun_getaverage(s): 
-	return 0.0
+def fun_getaverage(s):
+	s=list(s)
+	l=[]
+	for i in s:
+		if isinstance(i,int):
+			l.append(i)
+	print(len(l))
+	avg=sum(l)/len(l)
+	return sum if len(l)!=0 else 0
 
