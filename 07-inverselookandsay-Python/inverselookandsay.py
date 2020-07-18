@@ -10,4 +10,10 @@
 
 def inverselookandsay(a):
 	# Your code goes here
-	pass
+	if a==[]:return []
+	l=[]
+	for i in a:
+		for x in range(i[0]):
+			l.append(i[1])
+	return l
+	
