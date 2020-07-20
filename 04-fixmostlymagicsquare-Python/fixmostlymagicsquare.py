@@ -25,5 +25,4 @@ def fixmostlymagicsquare(L):
 		else:
 			l1.append(i)	
 	return l1				
-	pass
-	# Your code goes here
+	
