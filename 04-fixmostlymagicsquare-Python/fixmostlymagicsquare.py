@@ -7,5 +7,17 @@
 
 
 def fixmostlymagicsquare(L):
+	l=[]
+	s=0
+	x=sum(L[0])
+	for i in L:
+		if sum(i)!=x:
+			l.extend(i)
+			s=sum(i)
+			for j in l:
+				if j in i:
+					continue
+				j=j-(s-x)
+					
 	pass
 	# Your code goes here
