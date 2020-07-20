@@ -8,7 +8,7 @@
 def fixmostlymagicsquare(L):
 	l=[]
 	l1=[]
-	s=0
+	s,s0,s1=0,0,0
 	rowid,colid=0,0
 	# x=sum(L[0])
 	# for i in L: 
@@ -25,21 +25,26 @@ def fixmostlymagicsquare(L):
 	# 	else:
 	# 		l1.append(i)	
 	# return l1	
-	x=sum(L[0])
+	# x=sum(L[0])
 	for i in L:
 		l.append(sum(i))
 	for j in l:
 		if l.count(j)==1:
+			s0=j
 			rowid=l.index(j)
 	for x in range (len(L)):
 		for y in L:
 			s=s+y[x]
 		l1.append(s)
+		s=0
 	for z in l1:
 		if l1.count(z)==1:
+			s1=z
 			colid=l1.index(z)	
-	print(l)
-	print(l1)
+	print(rowid)
+	print(colid)
+	L[rowid][colid] -=(s1-s0)
+	return L
 
 
 	
