@@ -8,20 +8,32 @@
 def fixmostlymagicsquare(L):
 	l=[]
 	l1=[]
-	s=0
+	# s=0
+	# x=sum(L[0])
+	# for i in L: 
+	# 	if sum(i)!=x:
+	# 		l.extend(i)
+	# 		s=sum(i)
+	# 		for j in l:
+	# 			if j in i:
+	# 				l.append(j)
+	# 			else:
+	# 				j=j-(s-x)
+	# 				l.append(j)
+	# 		l1.append(l)
+	# 	else:
+	# 		l1.append(i)	
+	# return l1	
 	x=sum(L[0])
-	for i in L: 
-		if sum(i)!=x:
-			l.extend(i)
-			s=sum(i)
-			for j in l:
-				if j in i:
-					l.append(j)
-				else:
-					j=j-(s-x)
-					l.append(j)
-			l1.append(l)
-		else:
-			l1.append(i)	
-	return l1				
+	for i in L:
+		l.append(sum(i))
+	for j in l:
+		if l.count(j)==1:
+			index=l.index(j)
+	for x in L:
+		for y in range (len(L)):
+			sum=sum+x[y]
+			
+
+
 	
