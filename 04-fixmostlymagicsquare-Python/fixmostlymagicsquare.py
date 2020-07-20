@@ -38,7 +38,7 @@ def fixmostlymagicsquare(L):
 		s=0
 	for z in l1:
 		if l1.count(z)==1:
-			s1=z
+			s=z
 			# print(s1)
 			colid=l1.index(z)
 	s0=l1[colid-1]
