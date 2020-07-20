@@ -4,5 +4,6 @@
 # (that is, 3). If L is empty, return 0. You may not use loops/iteration in this problem.
 
 
-def fun_recursions_alternatingsum(l): 
+def fun_recursions_alternatingsum(l):
+	if len(l) == 0:return 0
 	return 0
