@@ -15,14 +15,6 @@ def su(l,i,s1):
 
 def fun_recursions_alternatingsum(l):
 	if len(l) == 0:return 0
-	return 0
 	i,s1=0,0
 	return su(l,i,s1)
 	 
-
-# for i in range(0,len(l)):
-# 	if i%2==0:
-# 		s1=s1+l[i]
-# 	else:
-# 		s1=s1-l[i]
-# return s1
