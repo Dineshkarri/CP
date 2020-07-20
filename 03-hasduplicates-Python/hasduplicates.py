@@ -5,7 +5,8 @@
 
 def hasduplicates(L):
 	# Your code goes here
-	l1=l=[]
+	l=[]
+	l1=[]
 	sum=0
 	for i in L:
 		for j in i:
