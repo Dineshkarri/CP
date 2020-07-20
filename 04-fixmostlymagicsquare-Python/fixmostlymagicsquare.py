@@ -30,8 +30,6 @@ def fixmostlymagicsquare(L):
 		l.append(sum(i))
 	for j in l:
 		if l.count(j)==1:
-			s0=j
-			print(s0)
 			rowid=l.index(j)
 	for x in range (len(L)):
 		for y in L:
@@ -45,7 +43,7 @@ def fixmostlymagicsquare(L):
 			colid=l1.index(z)	
 	print(l,rowid)
 	print(l1,colid)
-	# print(s1-s0)
+	
 	print(((L[rowid][colid])-(s1-s0)))
 	# print(L[rowid][colid] = ((L[rowid][colid])-(s1-s0))
 	# return L
