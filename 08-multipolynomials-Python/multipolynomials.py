@@ -7,14 +7,14 @@
 import numpy as np
 def multipolynomials(p1, p2):
 	# Your code goes here
-	# l=[]
-	# for i in p1:
-	# 	for j in p2:
-	# 		# if i!=0 and j!=0:
-	# 		l.append(i*j)
-	# return l
-	# pass
-	x=np.array(p1)
-	y=np.array(p2)
-	mul= np.polymul(y,x)
-	return mul
+	l=[0]*(len(p1)+len(p2)-1)
+	for i in range(len(p1)):
+		pos1 = len(p1)-(i+1)
+		for j in range(len(p2)):
+			pos2 = len(p2)-(j+1)
+			l[len(l)-(pos1+pos2+1)]+=p1[i]*p2[j]
+	return l
+	# x=np.array(p1)
+	# y=np.array(p2)
+	# mul= np.polymul(y,x)
+	# return mul
