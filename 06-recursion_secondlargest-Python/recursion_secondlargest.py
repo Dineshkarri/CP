@@ -23,7 +23,7 @@ def sl(L,i,m1,m2):
 	return s1(L,i+1,m1,m2)
 def recursion_secondlargest(L):
 	# Your code goes here
-	if len(l)<2:
+	if len(L)<2:
 		return None
 	return sl(L,0,0,0)
 	pass
