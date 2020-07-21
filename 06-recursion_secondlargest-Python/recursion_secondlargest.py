@@ -31,7 +31,7 @@ def sl(L,i,m1,m2):
 			temp=m1
 			m1=L[i]
 			m2=temp
-		elif L[i]>=m2:
+		elif L[i]>m2:
 			m2=L[i]	
 		return sl(L,i+1,m1,m2)
 
@@ -39,4 +39,4 @@ def recursion_secondlargest(L):
 	if len(L)<2:
 		return None
 	return sl(L,0,0,0)
-	pass
+	
