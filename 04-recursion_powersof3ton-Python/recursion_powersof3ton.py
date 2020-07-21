@@ -4,9 +4,9 @@
 # of 3 exist, you should return the empty list. You may not use loops/iteration in this problem. 
 
 def p3t(l,n,i):
-	if i==n:
+	if i>n:
 		return l
-	if 3**i<=n:
+	if 3**i<n:
 		l.append(3**i)
 	return p3t(l,n,i+1)
 	
