@@ -16,13 +16,26 @@
 def sl(L,i,m1,m2):
 	if i==len(L):
 		return m2
-	if L[i]>=m1:
-		temp=m1
-		m1=L[i]
-		m2=temp
-	return sl(L,i+1,m1,m2)
+	if L[i]>=0:
+		if L[i]>=m1:
+			temp=m1
+			m1=L[i]
+			m2=temp
+		elif L[i]>m2:
+			m2=L[i]
+		return sl(L,i+1,m1,m2)	
+	else:
+		if(i==0):
+			m1=L[i]
+		if L[i]>=m1:
+			temp=m1
+			m1=L[i]
+			m2=temp
+		elif L[i]>m2:
+			m2=L[i]	
+		return sl(L,i+1,m1,m2)
+
 def recursion_secondlargest(L):
-	# Your code goes here
 	if len(L)<2:
 		return None
 	return sl(L,0,0,0)
