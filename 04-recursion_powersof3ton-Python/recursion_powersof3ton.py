@@ -8,11 +8,10 @@ def p3t(n,i):
 		return l
 	if 3**i<=n:
 		l.append(3**i)
-	return p3t(n,i+1)
+	p3t(n,i+1)
 	
 def recursion_powersof3ton(n):
 	# Your code goes here
-	l=[]
 	if n<1:
 		return None
 	# for i in range(round(n)):
