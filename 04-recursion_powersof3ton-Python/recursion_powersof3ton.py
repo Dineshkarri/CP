@@ -6,9 +6,10 @@
 import math
 def recursion_powersof3ton(n):
 	# Your code goes here
+	if n<1:return None
 	l=[]
-	for i in range(math.round(n)):
-		if 3**i<= math.ceil(n):
+	for i in range(round(n)):
+		if 3**i<= math.floor(n):
 			l.append(3**i)
 	return l
 	pass
