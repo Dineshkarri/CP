@@ -20,7 +20,7 @@ def sl(L,i,m1,m2):
 		temp=m1
 		m1=L[i]
 		m2=temp
-	return s1(L,i+1,m1,m2)
+	return sl(L,i+1,m1,m2)
 def recursion_secondlargest(L):
 	# Your code goes here
 	if len(L)<2:
