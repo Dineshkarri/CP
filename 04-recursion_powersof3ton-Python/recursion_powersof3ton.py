@@ -2,13 +2,21 @@
 # Write the function powersOf3ToN(n) that takes a possibly-negative float or int n, and returns a list of the 
 # positive powers of 3 up to and including n. As an example, powersOf3ToN(10.5) returns [1, 3, 9]. If no such powers 
 # of 3 exist, you should return the empty list. You may not use loops/iteration in this problem. 
-
+l=[]
+def p3t(n,i):
+	if i==n:
+		return l
+	if 3**i<=n:
+		l.append(3**i)
+	return p3t(n,i+1)
+	
 def recursion_powersof3ton(n):
 	# Your code goes here
-	if n<1:return None
 	l=[]
-	for i in range(round(n)):
-		if 3**i<= n:
-			l.append(3**i)
-	return l
+	if n<1:
+		return None
+	# for i in range(round(n)):
+	# 	if 3**i<= n:
+	# 		l.append(3**i)
+	return p3t(round(n),0)
 	pass
