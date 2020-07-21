@@ -26,12 +26,12 @@ def sl(L,i,m1,m2):
 		return sl(L,i+1,m1,m2)	
 	else:
 		if(i==0):
-			m1=L[i]
+			m1=L[i]-1
 		if L[i]>=m1:
 			temp=m1
 			m1=L[i]
 			m2=temp
-		elif L[i]>m2:
+		elif L[i]>=m2:
 			m2=L[i]	
 		return sl(L,i+1,m1,m2)
 
