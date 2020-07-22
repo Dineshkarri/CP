@@ -22,7 +22,7 @@ def primeFactors(n):
 
 def issmith(n):
 	a=n
-	a=sum(list(str(a)))
+	n=sum(list(str(n)))
 	# for y in n:
 	# 	a+=int(y)
 	x=primeFactors(a)
