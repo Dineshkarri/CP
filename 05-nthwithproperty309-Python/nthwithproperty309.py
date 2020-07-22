@@ -6,8 +6,8 @@
 
 l=[0,1,2,3,4,5,6,7,8,9]
 L=[]
-c=0
 def isp309():
+	c=0
 	for i in range(309,10000):
 		a=pow(i,5)
 		a=str(a)
@@ -16,6 +16,7 @@ def isp309():
 				c+=1
 		if c==len(l):
 			L.append(i)
+			c=0
 # print(pow(320,5))	
 
 
