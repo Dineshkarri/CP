@@ -21,4 +21,6 @@ def isp309():
 
 def nthwithproperty309(n):
 	# Your code goes here
+	isp309()
+	print(L)
 	return L[n]
