@@ -17,7 +17,7 @@ def fun_carrylessadd(x, y):
 		# y=math.floor(y/10)
 		x=x//10
 		y=y//10
-		total=total*10
+		place=place*10
 		print (total)
 	return total
-
+fun_carrylessadd(1,2)
