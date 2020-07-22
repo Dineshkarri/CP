@@ -8,14 +8,13 @@ def fun_carrylessadd(x, y):
 	sum=0
 	total=0
 	place=1
-	
-	while(x or y):
+	while(x>0 or y>0):
 		sum=((x%10)+(y%10))
 		if sum>=10:
 			sum=sum%10
 		total= total+(sum*place)
-		x=x/10
-		y=y/10
+		x=x//10
+		y=y//10
 		total=total*10
 	return total
 
