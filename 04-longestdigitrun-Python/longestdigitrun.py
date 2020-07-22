@@ -17,5 +17,5 @@ def longestdigitrun(n):
 		else:
 			l.append((temp,c))
 			c=1
-	l.sort(key=lambda x:x[1])
-	return l[0][1]
+	l.sort(key=lambda x:x[1],reverse=True)
+	return l
