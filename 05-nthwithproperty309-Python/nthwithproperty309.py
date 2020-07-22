@@ -16,7 +16,7 @@ def isp309():
 				c+=1
 		if c==len(l):
 			l.append(i)
-print(pow(309,5))	
+print(pow(320,5))	
 
 
 def nthwithproperty309(n):
