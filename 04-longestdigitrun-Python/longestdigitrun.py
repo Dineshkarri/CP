@@ -18,4 +18,4 @@ def longestdigitrun(n):
 			l.append((temp,c))
 			c=1
 	l.sort(key=lambda x:x[1])
-	return l[0][0]
+	return l[0][1]
