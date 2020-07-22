@@ -17,30 +17,22 @@
 #     assert(binarySearchValues(L, v) == [(2,'f'), (0,'a'), (1,'c')])
 # Hint: Do not slice the list L, but rather adjust the indexes into L. 
 
-def binary_search(arr, low, high, x): 
+def binary_search(l, L, min, max, x): 
   
     # Check base case 
-    if high >= low: 
-  
-        mid = (high + low) // 2
-  
-        # If element is present at the middle itself 
-        if arr[mid] == x: 
-            return mid 
-  
-        # If element is smaller than mid, then it can only 
-        # be present in left subarray 
-        elif arr[mid] > x: 
-            return binary_search(arr, low, mid - 1, x) 
-  
-        # Else the element can only be present in right subarray 
-        else: 
-            return binary_search(arr, mid + 1, high, x) 
-  
-    else: 
-        # Element is not present in the array 
-        return -1
-
+	if max >= min: 
+		mid = (max + min) // 2
+		l.append((mid,L[mid]))
+		if L[mid] == x:
+			if len(l) ==0:
+				return l.append((L.index(x),x))
+			return l
+		elif L[mid] > x:
+			return binary_search(l,L, min, mid - 1, x) 
+		else:
+			return binary_search(l,L, mid + 1, max, x)
+	else:
+		return l
 def recursion_binarysearchvalues(L, v):
 	# Your codes goes here
 	return binary_search([],L, 0,len(L)-1, v)
