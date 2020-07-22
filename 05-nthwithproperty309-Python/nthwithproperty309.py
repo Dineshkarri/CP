@@ -12,13 +12,13 @@ def isp309():
 		a=pow(i,5)
 		a=str(a)
 		for j in l:
-			if int(j) in a:
+			if str(j) in a:
 				c+=1
 		if c==len(l):
-			l.append(i)
-print(pow(320,5))	
+			L.append(i)
+# print(pow(320,5))	
 
 
 def nthwithproperty309(n):
 	# Your code goes here
-	pass
+	return L[n]
