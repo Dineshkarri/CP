@@ -21,11 +21,11 @@ def primeFactors(n):
 	return(l)
 
 def issmith(n):
-	a=0
-	n=list(str(n))
-	for y in n:
-		a+=int(y)
-	x=primeFactors(n)
+	a=n
+	a=sum(list(str(a)))
+	# for y in n:
+	# 	a+=int(y)
+	x=primeFactors(a)
 	for i in x:
 		if len(str(i))>1:
 			i=sum(list(str(i)))
@@ -39,4 +39,5 @@ def fun_nth_smithnumber(n):
 	while(len(L)<=n):
 		if issmith(j):
 			L.append(j)
+		j+1
 	return L[n]
