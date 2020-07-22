@@ -21,8 +21,7 @@ def primeFactors(n):
 	return(l)
 
 def issmith(n):
-	a=n
-	n=sum(list(str(n)))
+	a=sum(list(map(int,str(n))))
 	# for y in n:
 	# 	a+=int(y)
 	x=primeFactors(a)
