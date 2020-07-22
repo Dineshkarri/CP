@@ -8,7 +8,7 @@ def fun_carrylessadd(x, y):
 	sum=0
 	total=0
 	place=1
-	while(x>0 or y>0):
+	while(x or y):
 		sum=((x%10)+(y%10))
 		if sum>=10:
 			sum=sum%10
