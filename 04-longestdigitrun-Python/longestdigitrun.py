@@ -18,4 +18,13 @@ def longestdigitrun(n):
 			l.append((temp,c))
 			c=1
 	l.sort(key=lambda x:x[1],reverse=True)
-	return l
+	for i in range(len(l)):
+		if i==len(l)-1:
+			return l[i][0]
+		if l[i][1]> l[i+1][1]:
+			return l[i][0]
+		elif l[i][1]==l[i+1][1]:
+			if l[i][0]>= l[i+1][0]:
+				continue
+			else:
+				return l[i][0]
