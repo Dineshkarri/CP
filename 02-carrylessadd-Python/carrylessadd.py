@@ -10,11 +10,12 @@ def fun_carrylessadd(x, y):
 	place=1
 	while(x or y):
 		sum=((x%10)+(y%10))
-		if sum>=10:
-			sum=sum%10
-		total= (sum*place)+total
-		x=math.floor(x/10)
-		y=math.floor(y/10)
+		sum=sum%10
+		total=(sum*place)+total
+		# x=math.floor(x/10)
+		# y=math.floor(y/10)
+		x=x//10
+		y=y//10
 		total=total*10
 	return total
 
