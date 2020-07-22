@@ -8,7 +8,7 @@ l=[0,1,2,3,4,5,6,7,8,9]
 L=[]
 def isp309():
 	c=0
-	for i in range(0,10000):
+	for i in range(1,10000):
 		a=pow(i,5)
 		a=str(a)
 		for j in l:
@@ -17,8 +17,9 @@ def isp309():
 		if c==len(l):
 			L.append(i)
 			c=0
+		continue
 # print(pow(320,5))	
-
+print(L)
 
 def nthwithproperty309(n):
 	# Your code goes here
