@@ -14,7 +14,16 @@ def primeFactors(n):
 		while n % i== 0:
 			l.append(i)
 			n = n // i
-	return(l)
+	return l
+
+def ispn(j):
+	l=primeFactors(j)
+	if len(l)==0:
+		return False
+	for i in l:
+		if j%(i**2)!=0:
+			return False
+	return True
 	
 def nthpowerfulnumber(n):
 	# Your code goes here
@@ -23,11 +32,10 @@ def nthpowerfulnumber(n):
 	L=[]
 	j=2
 	while(len(L)<=n):
-		l=primeFactors(j)
-		for i in l:
-			if j%(1**2)==0:
-				L.append(j)
+		if ispn(j):
+			L.append(j)
 		j+=1
-	return L[n]
+	print(L)
+	return L[n-1]
 
 	
