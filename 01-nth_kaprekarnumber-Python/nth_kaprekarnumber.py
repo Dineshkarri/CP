@@ -19,8 +19,6 @@ def iskaprekar(n):
 		if a1==n:
 			return True
 		a2= a2*10
-	return False
-
 	# a=a+a
 	# for i in range(l):
 	# 	if sum(list(map(int,str(a[i:i+l]))))==n:
