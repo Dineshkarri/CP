@@ -9,13 +9,16 @@
 
 import math
 def iskaprekar(n):
-	a1,a2=0,10
+	a1=0
+	a2=10
 	if n==0:
 		return False
 	a=str(n**2)
 	l=len(a)
 	for i in range(1,l+1):
-		a1=(int(a)/a2)+(int(a)%a2)
+		if a2==n:
+			continue
+		a1=(int(a)//a2)+(int(a)%a2)
 		if a1==n:
 			return True
 		a2= a2*10
@@ -40,4 +43,4 @@ def fun_nth_kaprekarnumber(n):
 			L.append(j)
 		j+=1
 	print (L)
-	return L[n]
+	# return L[n]
