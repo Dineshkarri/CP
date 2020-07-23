@@ -42,6 +42,6 @@ def isprime(m):
 def ishappyprimenumber(n):
 	# Your code goes here
 		if ishappynumber(n):
-			if isprime(m):
+			if isprime(n):
 				return True
 		return False
