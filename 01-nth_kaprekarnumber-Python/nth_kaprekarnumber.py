@@ -11,7 +11,7 @@ import math
 def iskaprekar(n):
 	if n==0:
 		return False
-	a=str(n**2)
+	a=str(n*n)
 	if len(a)>1:
 		a1=(int(a[:len(a)//2]))+(int(a[len(a)//2:]))
 	else:
