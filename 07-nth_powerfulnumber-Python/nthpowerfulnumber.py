@@ -18,8 +18,10 @@ def primeFactors(n):
 	
 def nthpowerfulnumber(n):
 	# Your code goes here
+	if n==0:
+		return 1
 	L=[]
-	j=1
+	j=2
 	while(len(L)<=n):
 		l=primeFactors(j)
 		for i in l:
