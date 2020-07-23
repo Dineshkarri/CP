@@ -9,17 +9,29 @@
 
 import math
 def iskaprekar(n):
-	a1,a2=0,0
+	a1,a2=0,10
 	if n==0:
 		return False
 	a=str(n**2)
-	if len(a)>1:
-		a1=(int(a[:len(a)//2]))+(int(a[len(a)//2:]))
-		a2=(int(a[len(a)//2:]))+(int(a[:len(a)//2]))
-	else:
-		a1=int(a)
-	if n==a1 or n==a2:
-		return True
+	l=len(a)
+	for i in range(1,l+1):
+		a1=(int(a)/a2)+(int(a)%a2)
+		if a1==n:
+			return True
+		a2= a2*10
+	return False
+
+	# a=a+a
+	# for i in range(l):
+	# 	if sum(list(map(int,str(a[i:i+l]))))==n:
+	# 		return True
+	# if len(a)>1:
+	# 	a1=(int(a[:len(a)//2]))+(int(a[len(a)//2:]))
+	# 	a2=(int(a[len(a)//2:]))+(int(a[:len(a)//2]))
+	# else:
+	# 	a1=int(a)
+	# if n==a1 or n==a2:
+	# 	return True
 	return False
 	
 def fun_nth_kaprekarnumber(n):
@@ -29,4 +41,5 @@ def fun_nth_kaprekarnumber(n):
 		if iskaprekar(j):
 			L.append(j)
 		j+=1
+	print (L)
 	return L[n]
