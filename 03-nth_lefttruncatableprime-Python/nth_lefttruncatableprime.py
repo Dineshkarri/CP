@@ -9,6 +9,35 @@
 
 
 import math
+def isprime(m):
+	if m<=1:
+		return False
+	for i in range (2,m):
+		if m%i ==0:
+			return False
+	return True
+
+def truncatePrime(n):
+	j=len(str(n))
+	i=10
+	# for x in range(j):
+	# 	if not isprime(n%i):
+	# 		return False
+	while(True):
+		if not isprime(n%i):
+			return False
+		i=i*10
+		if i>10**j:
+			break
+	return True
 
 def fun_nth_lefttruncatableprime(n):
-    return 1
+	m=1
+	list1=[]
+	while True:
+		if truncatePrime(m):
+			list1.append(m)
+		m +=1
+		if len(list1)==n+1:
+			break
+	return list1[len(list1)-1]
