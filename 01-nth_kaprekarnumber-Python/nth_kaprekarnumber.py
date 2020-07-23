@@ -8,6 +8,23 @@
 
 
 import math
-
+def iskaprekar(n):
+	if n==0:
+		return False
+	a=str(n**2)
+	if len(a)>1:
+		a1=(int(a[:len(a)//2]))+(int(a[len(a)//2:]))
+	else:
+		a1=int(a)
+	if n==a1:
+		return True
+	return False
+	
 def fun_nth_kaprekarnumber(n):
-    return 1;
+	L=[]
+	j=0
+	while(len(L)<=n):
+		if iskaprekar(j):
+			L.append(j)
+		j+=1
+	print(L)
