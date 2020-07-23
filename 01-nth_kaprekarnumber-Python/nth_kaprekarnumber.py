@@ -43,4 +43,4 @@ def fun_nth_kaprekarnumber(n):
 			L.append(j)
 		j+=1
 	print (L)
-	# return L[n]
+	return L[n]
