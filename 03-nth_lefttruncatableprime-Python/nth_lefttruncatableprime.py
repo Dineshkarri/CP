@@ -20,6 +20,8 @@ def isprime(m):
 def truncatePrime(n):
 	j=len(str(n))
 	i=10
+	if '0' in j[1:len(j)-1]:
+		return False
 	# for x in range(j):
 	# 	if not isprime(n%i):
 	# 		return False
