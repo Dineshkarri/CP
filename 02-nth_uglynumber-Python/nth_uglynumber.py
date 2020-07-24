@@ -18,18 +18,18 @@ def primeFactors(n):
 def isugly(n):
 	l=primeFactors(n)
 	for i in l:
-		if i!=2 or i!=3 or i!=5:
+		if i!=2 and i!=3 and i!=5:
 			return False
 	return True
 
 def fun_nth_uglynumber(n):
-	if n==0:
-		return 1
-	L=[]
+	# if n==0:
+	# 	return 1
+	L=[1]
 	j=2
-	while(len(L)<=n):
+	while(len(L)<=n+1):
 		if isugly(j):
 			L.append(j)
 		j+=1
 	print(L)
-	return L[n-1]
+	# return L[n-1]
