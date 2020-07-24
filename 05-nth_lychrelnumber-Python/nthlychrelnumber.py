@@ -5,6 +5,24 @@
 # The first few Lychrel numbers are 196, 295, 394, 493, 592, 689, 691, 788, 790, 879, 887….
 
 
+def ispd(n):
+	n=str(n)
+	return n==n[::-1]
+
+def isln(n):
+	n=str(n)
+	j=1
+	while j<20:
+		n=int(n)+int(n[::-1])
+		if ispd(n):
+			return False
+		j+=1
+	return True
 def nthlychrelnumbers(n):
 	# your code goes here
-	pass
+	L=[]
+	i=196
+	while(len(l)<=n):
+		if isln(i):
+			L.append(i)
+	return L[n]
