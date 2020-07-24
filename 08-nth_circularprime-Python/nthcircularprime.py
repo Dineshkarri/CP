@@ -24,7 +24,7 @@ def circularNumbers(n):
 
 	lis = [n]
 	for i in range(1, countOfDigits):
-		n = (n % 10*(countOfDigits-1))*10 + n//10*(countOfDigits-1)
+		n = (n % 10**(countOfDigits-1))*10 + n//10**(countOfDigits-1)
 		if n in lis:
 			return [], True
 		lis.append(n)
