@@ -4,7 +4,6 @@
 # 196-algorithm, after the most famous number associated with the process.
 # The first few Lychrel numbers are 196, 295, 394, 493, 592, 689, 691, 788, 790, 879, 887….
 
-
 def ispd(n):
 	n=str(n)
 	return n==n[::-1]
@@ -25,4 +24,4 @@ def nthlychrelnumbers(n):
 	while(len(l)<=n):
 		if isln(i):
 			L.append(i)
-	return L[n]
+	return L[n-1]
