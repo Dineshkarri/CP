@@ -9,8 +9,9 @@ def ispd(n):
 	return n==n[::-1]
 
 def isln(n):
+	m=str(n)
 	j=0
-	while j<20:
+	while j<int(m[:len(m)]):
 		n=str(n)
 		n=int(n)+int(n[::-1])
 		if ispd(n):
@@ -25,4 +26,5 @@ def nthlychrelnumbers(n):
 		if isln(i):
 			L.append(i)
 		i+=1
+	print(L)
 	return L[n-1]
