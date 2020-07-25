@@ -7,8 +7,8 @@
 # fun_nth_tidynumber(35) = 46
 
 def istidy(n):
+	nu=10
 	while(n>0):
-		nu=0
 		num=n%10
 		n=n//10
 		if num > nu:
