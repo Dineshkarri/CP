@@ -5,7 +5,7 @@
 def isamn(n):
 	sq=n**2
 	while(n>0):
-		if (sq % 10)!= (n % 10):
+		if (sq % 10!= n % 10):
 			return False
 		n=n//10
 		sq=sq//10
@@ -21,4 +21,3 @@ def nthautomorphicnumbers(n):
 			L.append(j)
 		j+=1
 	return L[n]
-	pass
