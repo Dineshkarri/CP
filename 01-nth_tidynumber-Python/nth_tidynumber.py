@@ -11,7 +11,7 @@ def istidy(n):
 		nu=0
 		num=n%10
 		n=n//10
-		if num < nu:
+		if num > nu:
 			return False
 		nu=num
 	return True
