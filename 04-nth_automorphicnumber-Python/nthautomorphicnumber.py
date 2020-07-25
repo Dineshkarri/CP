@@ -19,5 +19,6 @@ def nthautomorphicnumbers(n):
 	while(len(L)<=n):
 		if isamn(j):
 			L.append(j)
+		j+=1
 	return L[n]
 	pass
