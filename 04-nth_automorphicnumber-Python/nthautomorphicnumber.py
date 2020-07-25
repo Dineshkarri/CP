@@ -4,11 +4,8 @@
 # 76 and 890625 are all automorphic numbers.
 def isamn(n):
 	sq=n**2
-	# m=len(str(n))
-	# num=sq%(10**m)
-	# return n==num
 	while(n>0):
-		if sq%10!=n%10:
+		if (sq % 10)!= (n % 10):
 			return False
 		n=n//10
 		sq=sq//10
