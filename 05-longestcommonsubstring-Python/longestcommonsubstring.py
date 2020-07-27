@@ -9,4 +9,21 @@
 
 def longestcommonsubstring(s1, s2):
     # Yourcode goes here
-    pass
+    l1,l2=len(s1),len(s2)
+
+    l,pos=0,-1
+    m=[[-1]*(l2+1) for i in range(l1+1)]
+    for i in range(l1+1):
+        m[i][l2]=0
+    for j in range(l2):
+        m[l1][j]=0
+    for i in range(l1-1,-1,-1):
+        for j in range(l2):
+            if s1[i]!=s2[j]:
+                m[i][j]=0
+            else:
+                m[i][j]= 1+ m[i+1][j+1]
+                if l < m[i][j]:
+                    l=m[i][j]
+                    pos=i
+    return s1[pos: pos + 1] if l>0 else ""
