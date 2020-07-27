@@ -9,4 +9,14 @@
 
 def leastfrequentletters(s):
 	# Your code goes here
+	l=[]
+	min=1
+	s=s.lower()
+	for i in s:
+		if i not in l:
+			if s.count(i)<= min:
+				l.append(i)
+			min=s.count(i)
+	for i in l:
+		print(i)
 	pass
