@@ -15,7 +15,7 @@ def leastfrequentletters(s):
 		if not (65<=pos<=91 or 97<=pos<=122):
 			continue
 		pos-=97
-		if pos>0:
+		if pos>=0:
 			l[pos]=1 if l[pos]==100 else l[pos]+1
 		else:
 			pos+=32
@@ -24,7 +24,8 @@ def leastfrequentletters(s):
 	for pos in range(26):
 		val=l[pos]
 		if val<count:
-			ret=char(pos+97)
+			count = val
+			ret=chr(pos+97)
 		elif val==count:
 			ret+=chr(pos+97)
 	return ret
