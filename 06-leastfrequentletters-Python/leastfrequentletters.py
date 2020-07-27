@@ -9,14 +9,22 @@
 
 def leastfrequentletters(s):
 	# Your code goes here
-	l=[]
-	min=1
-	s=s.lower()
-	for i in s:
-		if i not in l:
-			if s.count(i)<= min:
-				l.append(i)
-			min=s.count(i)
-	for i in l:
-		print(i)
-	pass
+	l=[100]*26
+	for char in s:
+		pos=ord(char)
+		if not (65<=pos<=91 or 97<=pos<=122):
+			continue
+		pos-=97
+		if pos>0:
+			l[pos]=1 if l[pos]==100 else l[pos]+1
+		else:
+			pos+=32
+			l[pos]=1 if l[pos]==100 else l[pos]+1
+	ret,count ="",99
+	for pos in range(26):
+		val=l[pos]
+		if val<count:
+			ret=char(pos+97)
+		elif val==count:
+			ret+=chr(pos+97)
+	return ret
