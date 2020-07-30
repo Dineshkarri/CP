@@ -29,47 +29,51 @@
 # Hint: Also, remember to use % to get the one's digit, and use //= to get rid of the one's digit.
 
 def handtodice(hand):
-	return tuple(map(int,tuple(str(hand))))
+	return tuple(map(int, tuple(str(hand))))
+
 
 def dicetoorderedhand(lis):
 	return int("".join(list(map(str, sorted(lis, reverse=True)))))
 
+
 def diction(hand):
-	handDict={}
+	handDict = {}
 	for item in hand:
 		if item not in handDict.keys():
-			handDict[item]=1
+			handDict[item] = 1
 		else:
 			handDict[item] += 1
 
-	rep= False
-	max=0
-	repV=0
+	rep = False
+	maxValue = 0
+	repValue = 0
 	for key in handDict.keys():
-		if key > max:
-			max = key
-		if handDict[key] >1:
+		if key > maxValue:
+			maxValue = key
+		if handDict[key] > 1:
 			rep = True
-			repV = key
-	return (rep,repV) if rep else (rep,max)
+			repValue = key
+
+	return (rep, repValue) if rep else (rep, maxValue)
+
 
 def playstep2(hand, dice):
 	# your code goes here
 	hand = handtodice(hand)
-	rep,value = diction(hand)
+
+	rep, Value = diction(hand)
+
 	if rep:
-		hand=[value,value]
-		newvalue = dice%10
-		dice //=10
-		hand.append(newvalue)
-		return (dicetoorderedhand(hand),dice)
+		hand = [Value, Value]
+		newValue = dice % 10
+		dice //= 10
+		hand.append(newValue)
+		return (dicetoorderedhand(hand), dice)
 
 	else:
-		hand=[value]
+		hand = [Value]
 		for i in range(2):
-			newvalue = dice%10
-			dice //=10
-			hand.append(newvalue)
-			return (dicetoorderedhand(hand),dice)
-
-	pass
+			newValue = dice % 10
+			dice //= 10
+			hand.append(newValue)
+		return (dicetoorderedhand(hand), dice)
